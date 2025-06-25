@@ -1,0 +1,294 @@
+.turimet-account__alerts{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:40px;
+    max-width:440px;
+    z-index:9;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+.account-alert{
+    display: inline-flex;
+    padding:8px 14px;
+    border-radius:8px;
+}
+.account-alert.error{
+    background-color:#fce2ec;
+    color:#D01156;
+}
+.account-alert.success{
+    background-color: #008655;
+    color:#fff;
+}
+
+.oportunity-section{
+    background-color: var(--tu-surface-1);
+    border-radius:8px;
+    position: relative;
+    padding:25px;
+}
+.oportunity-section-2{
+    padding-bottom:60px !important;
+}
+.oportunity-placeholder{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.oportunity-loader{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: block;
+    height:200px;
+    width:200px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    background-image:url('../images/loader.svg');
+}
+.oportunity-entry{
+
+}
+.oportunity-entry__header{
+    border-bottom:1px solid var(--tu-grey-3);
+    padding-bottom:25px;
+    margin-bottom:25px;
+}
+.oportunity-entry__header-title{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.oportunity-entry__header-title h2{
+    font-size:1.2em;
+    margin:0;
+}
+.oportunity-entry__header-title ul{
+    list-style:none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    margin:0;
+    padding:0;
+    gap:10px;
+    font-size:.875em;
+    color:var(--tu-grey-2);
+}
+.oportunity-entry__header-title ul li:first-child{
+    border-right:1px solid var(--tu-grey-1);
+    padding-right:10px;
+}
+.oportunity-entry__header-title ul li:first-child a{
+    color:var(--tu-grey-1);
+    font-weight: bold;
+}
+.oportunity-entry__header-title ul li:nth-child(2){
+    display: flex;
+    align-items:center;
+    gap:10px;
+}
+.oportunity-entry__header-title figure{
+    height:32px;
+    width:32px;
+}
+.oportunity-entry__header-salary{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.oportunity-entry__buttons{
+    margin-top:20px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+}
+.oportunity-entry__buttons > div{
+    display: flex;
+    gap:10px;
+}
+.oportunity-entry__buttons .btn{
+    padding:.4em 1.2em;
+}
+.oportunity-entry__buttons .btn-more{
+    position: relative;
+    color:var(--tu-secondary-3);
+    display: flex;
+    padding-right:calc(1em + 4px);
+}
+.oportunity-entry__buttons .btn-more::after{
+    content:'';
+    display: block;
+    height:1em;
+    width:1em;
+    background-image:url('../images/icn-caret-right.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    filter: invert(18%) sepia(33%) saturate(5710%) hue-rotate(235deg) brightness(61%) contrast(134%);
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:0;
+}
+.oportunity-single{
+    background-color:var(--tu-secondary-5);
+}
+.oportunity-single .hero-sop{
+    padding-bottom:100px;
+}
+.oportunity-single .section-3 .section__background::after{
+    display: none !important;
+}
+.oportunity-single__country{
+    display: flex;
+    align-items:center;
+    gap:10px;
+}
+.oportunity-single__company--a{
+    color:inherit;
+}
+.oportunity-single__company{
+    list-style:none;
+    display:flex;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+.oportunity-single__company li:first-child{
+    width:64px;
+}
+.oportunity-single__company li figure{
+    aspect-ratio:1;
+    height:64px;
+    width:64px;
+    background-color:#fff;
+    border-radius:5px;
+}
+.oportunity-single__company li:nth-child(2){
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:4px;
+}
+.oportunity-single__company li:nth-child(2) a{
+    font-weight: bold;
+}
+.oportunity-single__content-wrap{
+    padding-top: 0;
+    padding-bottom:60px;
+}
+.oportunity-single__title{
+    margin-bottom:0;
+}
+.oportunity-single__content{
+    background-color:#fff;
+    border-radius:12px;
+    padding:40px;
+    margin-top:-60px;
+    position: relative;
+    z-index:2;
+    display: flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-bottom:30px;
+}
+.oportunity-single__content > aside{
+    width:300px;
+}
+.oportunity-single__content > div{
+    width:calc(100% - 300px - 30px);
+}
+.oportunity-single__content > .oportunity-single__more{
+    width:100%;
+}
+.oportunity-single__buttons{
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:flex-start;
+}
+.oportunity-single__more{
+    margin-top:20px;
+    font-size:.875em;
+}
+.oportunity-single__tags{
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+    border-top:1px solid var(--tu-grey-3);
+    padding-top:20px;
+    margin-top:20px;
+}
+.oportunity-single__tags a{
+    display: inline-flex;
+    background-color:var(--tu-primary-3);
+    color:var(--tu-neutral-2);
+    padding:10px 20px;
+    border-radius:50px;
+    line-height:1em;
+}
+.oportunity-single__buttons .share-select{
+    width:auto;
+}
+.oportunity-single__buttons .share-select > .choices > .choices__inner{
+    border-color:var(--tu-neutral-2);
+    color:var(--tu-neutral-2);
+}
+.oportunity-single__buttons .share-select .choices__item.choices__placeholder.choices__item--selectable[aria-selected]::after{
+    filter:invert();
+}
+.oportunity-single__buttons .share-select .choices__list--dropdown, .choices__list[aria-expanded]{
+    min-width:260px;
+    z-index:99;
+    color:var(--text-color);
+}
+.oportunity-single__match{
+    background-color:var(--tu-primary-5);
+    border-radius:8px;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    padding:20px;
+    margin-top:30px;
+    text-align: center;
+}
+.oportunity-single__match .btn{
+    justify-content:center;
+}
+
+.link-report{
+    color:var(--tu-secondary-3);
+    display: inline-flex;
+    align-items:center;
+    position: relative;
+    padding-left:calc(1.1em + 10px);
+    text-decoration: underline;
+}
+.link-report:hover{
+    text-decoration: none;
+}
+.link-report::before{
+    content:'';
+    height:1.2em;
+    width:1.2em;
+    display: block;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    background-image:url('../images/icn-megaphone.svg');
+    filter: invert(8%) sepia(67%) saturate(4733%) hue-rotate(243deg) brightness(96%) contrast(128%);
+    position: absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+}

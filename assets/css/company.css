@@ -1,0 +1,9 @@
+.company-single__meta{
+    display: flex;
+    flex-direction:column;
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-bottom:40px;
+    gap:6px;
+}

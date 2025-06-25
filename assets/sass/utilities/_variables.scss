@@ -1,0 +1,100 @@
+/* Colors */
+$lightBlue: #A3DEFA;
+$blue: #162C4C;
+$midBlue: #6986AF;
+$midGrey: #818387;
+$lightGrey: #F1F2F5;
+$white: #FFFFFF;
+
+/* Screen */
+$mobileWidth:767px;
+
+/* Container */
+$containerWidth: 1140px;
+$containerMaxWidth: calc(100vw - 60px);
+$containerWidth2: 860px;
+
+/* Typography
+   ========================================================================== */
+$baseFontSize: 16px;
+
+// When using baseFontSize variable, must use it with fontSize mixin
+$baseFontFamily: "TT Commons", Arial, sans-serif;
+$baseLineHeight: 1.5;
+//must be unitless
+$baseSpacing: $baseLineHeight+em;
+//vertical spacing
+$baseTextColor: $blue;
+
+/* Type Color */
+$typeHighlight: $blue;
+$typeLowlight: $lightGrey;
+
+/* Grid
+   ========================================================================== */
+$cols: 12;
+$baseGutter: 20px;
+$colsGap: 30px;
+$mobileColsGap: 20px;
+
+/* Sections
+   ========================================================================== */
+$largeSpacing: 80px;
+$midSpacing: 50px;
+$smallSpacing: 20px;
+
+$mobileLargeSpacing: 50px;
+$mobileMidSpacing: 30px;
+$mobileSmallSpacing: 10px;
+
+/* Link
+   ========================================================================== */
+$linkColor: $blue;
+$linkHoverColor: $lightBlue;
+
+/* Background
+   ========================================================================== */
+$bgBasic: #fff;
+
+
+/* Box foot */
+$boxFootDivider: $blue;
+
+/* Divider
+   ========================================================================== */
+$dividerColor: $blue;
+
+/* List
+   ========================================================================== */
+$listInlineDividerBorder: $lightGrey;
+$listBorder: $lightGrey;
+
+/* Table
+   ========================================================================== */
+$tableBorderColor: $blue;
+
+/* Form
+   ========================================================================== */
+$labelLeftWidth: 30%;
+$formFieldBorder: 1px solid $lightGrey;
+$placeholderText: $lightGrey;
+
+/* Button
+   ========================================================================== */
+$btnDefaultBg: #ddd;
+$btnDefaultBorder: $lightGrey;
+
+/* Template
+   ========================================================================== */
+$skipLinkBg: $blue;
+$bodyBg: #fff;
+$pageWidth: 997px;
+
+/* header */
+$headerBgStop1: #09456a;
+$headerBgStop2: #02587e;
+$contentBg: #fff;
+$contentWidth: 960px;
+
+/* footer */
+$footerBorder: $lightGrey;

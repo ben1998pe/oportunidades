@@ -1,0 +1,212 @@
+
+body {
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: normal;
+	text-transform: none;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+body .wp-block{
+    max-width:var(--content-width);
+}
+.wp-block[data-align="full"]{
+    max-width:none;
+}
+.wp-block[data-align="wide"]{
+    max-width:100%;
+}
+
+/* BUTTON */
+.btn, li:is(.btn-primary, .btn-secondary) > a{
+    padding:.8em 1.5em;
+    background-color:var(--btn-background);
+    border:1px solid var(--btn-background);
+    border-radius:8px;
+    color:var(--btn-color);
+    display: inline-flex;
+    letter-spacing:0.5px;
+    user-select:none;
+    cursor:pointer;
+}
+.gb-button-wrapper .gb-button{
+    border-radius:8px;
+    user-select:none;
+    cursor:pointer;
+}
+
+:is(a, input, button).btn-primary, li.btn-primary > a{
+    --btn-background:#02006C;
+    --btn-color:#FFFFFF;
+}
+
+:is(a, input, button).btn-secondary, li.btn-secondary > a{
+    --btn-background:#02006C;
+    --btn-color:#02006C;
+    background-color:transparent;
+}
+
+/* IMAGE */
+[class*=fig-]{
+    position: relative;
+    overflow: hidden;
+}
+[class*=fig-] img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fig-cover img{
+    object-fit:cover;
+}
+.fig-contain img{
+    object-fit:contain;
+}
+
+/* COLUMNS */
+[class*=cols-]{
+    display: flex;
+    gap:var(--gap);
+    flex-wrap:wrap;
+}
+.cols-2 > *{
+    width:calc(100%/2 - var(--gap)/2);
+}
+.cols-3 > *{
+    width:calc(100%/3 - var(--gap)*2/3);
+}
+.cols-4 > *{
+    width:calc(100%/4 - var(--gap)*3/4);
+}
+.cols-5 > *{
+    width:calc(100%/5 - var(--gap)*4/5);
+}
+.cols-6 > *{
+    width:calc(100%/6 - var(--gap)*5/6);
+}
+.cols-70-30 > *{
+    width:calc(64% - var(--gap)/2);
+}
+.cols-70-30 > *:nth-child(even){
+    width:calc(36% - var(--gap)/2);
+}
+
+/* CUSTOM */
+.trust-logos figure{
+    aspect-ratio:1;
+}
+
+/* TABS */
+.rtabs{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:var(--gap);
+}
+.rtabs__list{
+    gap:0;
+}
+.rtabs__list > li > a{
+    display: inline-flex;
+    border-bottom:2px solid var(--dark-color);
+    padding:.9em 2.5em;
+    user-select:none;
+}
+.rtabs__list > li.active > a{
+    color:var(--btn-background);
+    border-color:var(--btn-background);
+}
+.rtabs__content-tab:not(.active){
+    display: none;
+}
+
+/* TOGGLE LIST */
+.rtlist__item{
+    border-bottom: 1px solid #BFC3D5;
+}
+.rtlist__item:not(.active) .rtlist__item-content{
+    display: none;
+}
+.rtlist__item-title{
+    font-size:1.25em;
+    font-weight:400;
+    line-height:1.3em;
+    user-select:none;
+    cursor:pointer;
+    padding:20px 0;
+    margin:0;
+}
+.rtlist__item .rtlist__item-content{
+    padding-top:0;
+    padding-bottom:20px;
+}
+
+.no-desktop{
+    display: none;
+}
+@media screen and (max-width:1160px){
+    .gb-row > .gb-inside-container, .gb-rowed{
+        max-width: calc(100vw - 40px) !important;
+    }
+}
+@media screen and (min-width:676px) and (max-width:1100px){
+    .no-tablet{
+        display: none;
+    }
+    [class*=t-cols-]{
+        display: flex;
+        gap:var(--t-gap);
+        flex-wrap:wrap;
+    }
+    .t-cols-1 > *{
+        width:100%;
+    }
+    .t-cols-2 > *{
+        width:calc(100%/2 - var(--t-gap)/2);
+    }
+    .t-cols-3 > *{
+        width:calc(100%/3 - var(--t-gap)*2/3);
+    }
+    .t-cols-4 > *{
+        width:calc(100%/4 - var(--t-gap)*3/4);
+    }
+    .t-cols-5 > *{
+        width:calc(100%/5 - var(--t-gap)*4/5);
+    }
+    .t-cols-6 > *{
+        width:calc(100%/6 - var(--t-gap)*5/6);
+    }
+}
+@media screen and (max-width:676px){
+    .no-mobile{
+        display: none;
+    }
+    [class*=m-cols-]{
+        display: flex;
+        gap:var(--m-gap);
+        flex-wrap:wrap;
+    }
+
+    .m-cols-1 > *{
+        width:100%;
+    }
+    .m-cols-2 > *{
+        width:calc(100%/2 - var(--m-gap)/2);
+    }
+    .m-cols-3 > *{
+        width:calc(100%/3 - var(--m-gap)*2/3);
+    }
+    .m-cols-4 > *{
+        width:calc(100%/4 - var(--m-gap)*3/4);
+    }
+    .m-cols-5 > *{
+        width:calc(100%/5 - var(--m-gap)*4/5);
+    }
+    .m-cols-6 > *{
+        width:calc(100%/6 - var(--m-gap)*5/6);
+    }
+}
